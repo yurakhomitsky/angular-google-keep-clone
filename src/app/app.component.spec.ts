@@ -21,13 +21,13 @@ describe('AppComponent', () => {
   it(`should have as title 'angular-google-keep-clone'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-google-keep-clone');
+    expect(app.title).toEqual('angular-google-keep-notes-clone');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-google-keep-clone app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-google-keep-notes-clone app is running!');
   });
 });

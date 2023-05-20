@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: true,
-  imports: [CommonModule, MatToolbarModule]
+  imports: [CommonModule, ToolbarComponent, RouterModule]
 })
 export class AppComponent {
-  title = 'angular-google-keep-clone';
+  title = 'angular-google-keep-notes-clone';
 }
